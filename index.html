@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/now" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
+    <title>RedSurgiendo</title>
+</head>
+
+<script>
+    // Función para detectar si el dispositivo es un celular o una tablet
+    function esDispositivoMovil() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+    // Verificar si el dispositivo es un celular y redirigir o mostrar un mensaje de error
+    if (esDispositivoMovil()) {
+        alert("Lo lamentamos, por el momento solo puedes ver la página por computadora")
+    }
+</script>
+
+<script type='text/javascript'>
+    document.addEventListener("contextmenu", function(event){
+        event.preventDefault();
+    }, false);
+
+    document.addEventListener("copy", function(event){
+        // Change the copied text if you want
+        event.clipboardData.setData("text/plain", "No se permite copiar en esta página web");
+        // Prevent the default copy action
+        event.preventDefault();
+    }, false);
+</script>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-socialism">
+                <img src="img/martillo.png" width="80" height="80">
+            </div>
+            <nav class="nav-main">
+                <a href="#about-us">NOSOTROS</a>
+                <a href="#program">NUESTRO PROGRAMA</a>
+                <a href="#contact-us">CONTÁCTANOS</a>
+            </nav>
+        </div>
+    </header>
+    <section id="home">
+        <div class="container-home">
+            <div class="log_redsur">
+                <img src="img/redsur_logo.png" width="230" height="300">
+            </div>
+            <div class="txt-ppl-che">
+                <h1>PODER <br>POPULAR <br><span class="txt-che">PARA LA LIBERACIÓN</span></h1>
+            </div>
+            <img src="img/che_guevara.png" alt="" width="240" height="300">
+        </div>
+    </section>
+    <section id="about-us">
+        <h2 class="title-section">SOBRE NOSOTROS</h2>
+        <div class="container-about">
+            <p class="txt-about"><strong>REDSURGIENDO</strong> es una organización política camilista que se recoge en una visión anticapitalista y
+                antipatriarcal <strong>EN EL PARADIGMA DE LA LIBERACIÓN</strong>(la filosofía, pedagogía, teología,
+                psicología y movimientos de liberación nacional) determinada por una profunda convicción
+                revolucionaria. En ese sentido, reivindica el marxismo leninismo apuntándole a la materialización del
+                socialismo raizal por medio de la construcción de poder popular.<br><br>Guiada por principios de solidaridad, convicción militante, radicalidad, búsqueda de la unidad del
+                sector revolucionario dentro del bloque popular, amor eficaz, lealtad, coherencia política y vocación
+                de poder como elementos que caracterizan su militancia en la acción política.</p>
+            <div class="img-container-about">
+                <img src="img/karl.png" alt="Karl-Marx" width="360" height="450">
+            </div>
+            <a class="arrow-about" href="index.html"><img src="img/arrow_up.png" width="50" height="50"></a>
+        </div>
+    </section>
+    <section id="program">
+        <h2 class="title-section">NUESTRO PROGRAMA</h2>
+        <div class="container-program">
+            <img class="lenin-img" src="img/lenin.png" alt="" width="320" height="320">
+            <img class="qr-program" src="img/programa_qr.png" alt="qr-program" width="300" height="340">
+            <a class="arrow-program" href="index.html"><img src="img/arrow_up.png" width="50" height="50"></a>
+        </div>
+    </section>
+    <section id="contact-us">
+        <h2 class="title-contact">CONTÁCTANOS</h2>
+        <div class="container-contact">
+            <div class="container-contact-redes">
+                <div class="mail-lg-txt">
+                    <img src="img/icon_mail.png" alt="icon-mail">
+                    <p class="mail-txt">redsur_col@tuta.io</p>
+                </div>
+                <div class="social-fb-ig">
+                    <img src="img/icon_fb.png" alt="icon-facebook">
+                    <img src="img/icon_ig.png" alt="icon-instagram">
+                    <a href="https://www.instagram.com/redsurgiendo/" target="_blank">@redsurgiendo</a>
+                </div>
+            </div>
+            <div class="box-img-fidel">
+                <img src="img/fidel_castro.png" alt="Fidel Castro" width="350" height="390">
+            </div>
+            <a class="arrow-contact" href="index.html"><img src="img/arrow2_up.png" width="60" height="60"></a>
+        </div>
+    </section>
+    <footer>
+        <h3>WebSite develop by <a href="https://www.twitter.com/@redasg_" target="_blank">@redasg</a>❤️​</h3>
+    </footer>
+</body>
+</html>
